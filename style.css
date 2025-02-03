@@ -132,7 +132,7 @@
   i{
     margin-right: 3px;
   }
-input:hover {
+input:focus {
     outline: none;
     border: 2px solid blue;
 }
