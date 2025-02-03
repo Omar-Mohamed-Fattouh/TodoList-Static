@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  .todo-list {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    transition: transform 0.3s ease;
+  }
+  
+  .todo-list:hover {
+    transform: translateY(-5px);
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 25px 0;
+    color: #6a11cb;
+    font-size: 28px;
+  }
+  
+  h1 i {
+    margin-right: 10px;
+  }
+  
+  .first-row, .second-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .search-container, .sort-container, .actions-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-container {
+    flex: 1;
+  }
+  
+  .search-container input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+  }
+  .search-container button {
+    padding: 10px 15px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .search-container button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+  }
+  
+  .sort-container select, .second-row select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .actions-container button {
+    padding: 10px 15px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .actions-container button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+  }
+  
+  .second-row {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+  }
+  
+  .second-row input, .second-row select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+    background: white;
+  }
+  
+  .second-row button {
+    padding: 10px 15px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .second-row button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+  }
+  i{
+    margin-right: 3px;
+  }
+  .task-table {
+    width: 100%;
+    margin-top: 20px;
+  }
+ .task-table thead {
+  padding: 30px;
+ }
+  .task-table th, .task-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .task-table th {
+    background: linear-gradient(175deg, #6a11cb, #2575fc);
+    color: white;
+    font-weight: 600;
+  }
+  
+  .task-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .task-table td button {
+    padding: 8px 12px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .task-table td .edit-btn {
+    background: linear-gradient(135deg, #ff7e5f, #6a11cb);
+  }
+  
+  .task-table td .delete-btn {
+    background: linear-gradient(135deg, #2575fc, #ff4b2b);
+  }
+  
+  .task-table td button:hover {
+    opacity: 0.9;
+  }
+    @media (max-width: 768px) {
+    .todo-list {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .first-row, .second-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-container, .sort-container, .actions-container {
+      width: 100%;
+    }
+  
+    .second-row input, .second-row select, .second-row button {
+      width: 100%;
+    }
+  }
