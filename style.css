@@ -132,6 +132,10 @@
   i{
     margin-right: 3px;
   }
+input:hover {
+    outline: none;
+    border: 2px solid blue;
+}
   .task-table {
     width: 100%;
     margin-top: 20px;
